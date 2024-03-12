@@ -1,2 +1,2 @@
 # Fiori-playground
-Fiori 실습 놀이
+Fiori 실습
