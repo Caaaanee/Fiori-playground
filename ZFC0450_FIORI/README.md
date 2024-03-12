@@ -19,7 +19,11 @@
 
 ## zfc0450
 
-An SAP Fiori application.
+* 학급을 선택한 후 SEARCH를 누르면 리스트에 해당 학급의 학생이 보여진다. 이후 추가 정보를 보기 위해 학생 ITEM을 클릭하면 패널이 열리면서 학생의 추가 정보가 보인다.  
+
+### 실행화면 
+
+![alt text](피오리.png)
 
 ### Starting the generated app
 
