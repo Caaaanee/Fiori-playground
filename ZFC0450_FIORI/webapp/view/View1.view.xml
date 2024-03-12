@@ -1,0 +1,38 @@
+<mvc:View controllerName="sync04.zfc0450.controller.View1"
+    xmlns:mvc="sap.ui.core.mvc" displayBlock="true"
+    xmlns="sap.m"
+    xmlns:core = "sap.ui.core"
+    xmlns:f = "sap.ui.layout.form"
+>
+    <Page id="page" title="{i18n>title}">
+        <content>
+             <!-- Combo Box (Drop down List box) -->
+            <ComboBox id = "comboClass" items = "{/classList}" 
+                    selectedKey = "{/classList/1/class}" selectionChange = "onSelectChange">
+                <items>
+                    <core:Item key = "{class}" text = "{cName}"/>
+                </items>
+            </ComboBox>
+            <Button text = "Search" press = "onSearch"/>
+
+            <!-- Student List -->
+            <List id = "listStd" items = "{stdList}" itemPress = "onPress">
+                <items>
+                    <StandardListItem type = "Active" title = "{stdNo}" description = "{sName}"/>
+                </items>
+            </List>
+
+            <!-- Student List Panel -->
+            <Panel id = "infoStd" headerText = "{sName} Student Info" expandable = "true" expanded = "{/exPanded}" >
+                <f:SimpleForm>
+                    <core:Title text = "Student Info"/>
+                    <Label text = "Student No"  width = "50%"/>
+                        <Input id = "inpStd" value = "{stdNo}" width = "50%"/>
+                    <Label text = "Gender" width = "50%"/>
+                        <Input id = "inpGender" value = "{genKey}" description = "{genText}" width = "50%"/>
+                </f:SimpleForm>
+            </Panel>
+
+        </content>
+    </Page>
+</mvc:View>
